@@ -1,0 +1,10 @@
+﻿<div class="thunder-card">
+	<div class="thunder-card-body">
+		@ChildContent
+	</div>
+</div>
+
+@code {
+	[Parameter]
+	public RenderFragment ChildContent { get; set; }
+}

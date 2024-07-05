@@ -1,0 +1,20 @@
+﻿.thunder-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #fff;
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thunder-card:hover {
+    transform: translateY(-5px);
+    border-color: cornflowerblue;
+}
+
+.thunder-card-body {
+    padding: 1em;
+}
+
