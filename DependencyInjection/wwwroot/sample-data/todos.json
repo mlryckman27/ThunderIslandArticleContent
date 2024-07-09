@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Go grocery shopping",
+    "description": "I need to buy some food for the week.",
+    "completed": false
+  },
+  {
+    "title": "Clean the house",
+    "description": "The house is a mess and needs to be cleaned.",
+    "completed": false
+  },
+  {
+    "title": "Do laundry",
+    "description": "I need to wash my clothes.",
+    "completed": false
+  }
+]

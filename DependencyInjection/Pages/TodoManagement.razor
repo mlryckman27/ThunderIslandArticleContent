@@ -1,0 +1,33 @@
+﻿@page "/todo-management"
+
+@using DependencyInjection.Services
+
+@inject TodoService TodoService
+
+<h3>Todo Management</h3>
+
+@if (_todoItems is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    @foreach (var todoItem in _todoItems)
+    {
+        <div class="todo-item-card">
+            <h3>@todoItem.Title</h3>
+            <p>@todoItem.Description</p>
+            <input type="checkbox" checked="@todoItem.IsDone" />
+        </div>
+    }
+}
+
+@code {
+
+    private TodoItem[] _todoItems;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _todoItems = await TodoService.GetTodosAsync();
+    }
+}
